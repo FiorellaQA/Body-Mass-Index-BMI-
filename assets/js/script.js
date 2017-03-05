@@ -1,4 +1,3 @@
-
 var boton = document.getElementById("boton");
 document.getElementById("form1").addEventListener("submit",function(e){
 	e.preventDefault(); //Evita el envío del formulario hasta comprobar
@@ -24,7 +23,7 @@ document.getElementById("form1").addEventListener("submit",function(e){
 	// }
 
 	function calculate (masa,estatura){
-		return masa/Math.pow(estatura,2);
+		return (masa/Math.pow(estatura,2)).toFixed(2);
 	}
 	if(masa >= 0 && estatura >= 0){
 		alert(calculate(masa,estatura));	
